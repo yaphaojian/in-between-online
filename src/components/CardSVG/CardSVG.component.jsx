@@ -1,11 +1,10 @@
 'use client';
-import "./CardSVG.style.min.css";
+import "./CardSVG.min.css";
+import "./CardSVG.style.css";
 
-const CardSVG = () => {
+const CardSVG = ({card}) => {
   return (
-    <div>
-      <span className="pcard-as"></span>
-    </div>
+      <span className={`pcard-${card} card-svg`}></span>
   )
 
 }
